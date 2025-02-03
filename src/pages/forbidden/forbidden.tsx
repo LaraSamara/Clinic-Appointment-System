@@ -1,6 +1,6 @@
 import React from "react";
-import routeHOC from "../../routes/HOCs/routeHOC";
-import ErrorComponent from "../../component/error-component";
+import ErrorComponent from "@clinic/component/error-component";
+import routeHOC from "@clinic/routes/HOCs/routeHOC";
  
 const ForbiddenComponent: React.FC = () => {
   return (
