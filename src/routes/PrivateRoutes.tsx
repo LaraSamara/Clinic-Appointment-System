@@ -14,6 +14,10 @@ const privateRoutes: RouteObject = {
       element: <h1>Landing Page</h1>,
     },
     {
+      path: "doctor-dashboard",
+      element: <DoctorDashboard />,
+    },
+    {
       path: "add-booking",
       element: <BookAnAppointment />,
     },
