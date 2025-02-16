@@ -17,7 +17,6 @@ const ServiceCard: React.FC<IProps> = (props: IProps) => {
         justifyContent: "center",
         textAlign: "center",
         width: {xs:"100%",sm:"45%",md:"28%" },
-
       }}
     >
       <Box
@@ -55,4 +54,4 @@ const ServiceCard: React.FC<IProps> = (props: IProps) => {
   );
 };
 
-export default ServiceCard
+export default ServiceCard;

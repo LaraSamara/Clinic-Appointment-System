@@ -30,14 +30,14 @@ const Hero = () => {
                             padding: "10px 40px ",
                             color: "white",
                             borderRadius: "15px",
-                            backgroundColor: "#87BFF7",
+                            backgroundColor: "#1A76D1",
                             border: "2px solid #ffffff",
                             transition: "0.3 ease all",
                             textTransform: "capitalize",
                             "&:hover": {
                                 backgroundColor: "white",
-                                border: "2px solid #87BFF7",
-                                color: "#87BFF7",
+                                border: "2px solid #1A76D1",
+                                color: "#1A76D1",
                             },
                         }}
                     >Login
