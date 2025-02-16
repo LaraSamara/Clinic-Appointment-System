@@ -1,25 +1,18 @@
 import { RouteObject } from "react-router-dom";
-import GardedRoute from "./gardedRoute";
-import Appointments from "@clinic/pages/appointments/appointments";
-import DoctorDashboard from "@clinic/pages/doctor-dashboard";
-import UserManagement from "@clinic/pages/user-management";
-import BookAnAppointment from "@clinic/Book-an-appointment";
+import { lazy } from "react";
+import GuardedRoute from "./guardedRoute";
+const Appointments = lazy(() => import("@clinic/pages/appointments"));
+const DoctorDashboard = lazy(() => import("@clinic/pages/doctor-dashboard"));
+const UserManagement = lazy(() => import("@clinic/pages/user-management"));
+const Booking = lazy(() => import("@clinic/pages/booking"));
 
 const privateRoutes: RouteObject = {
   path: "/clinic",
-  element: <GardedRoute />,
+  element: <GuardedRoute />,
   children: [
     {
-      index: true,
-      element: <h1>Landing Page</h1>,
-    },
-    {
-      path: "doctor-dashboard",
-      element: <DoctorDashboard />,
-    },
-    {
       path: "add-booking",
-      element: <BookAnAppointment />,
+      element: <Booking />,
     },
     {
       path: "appointments-dashboard",

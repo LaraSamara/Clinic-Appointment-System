@@ -9,6 +9,7 @@ export type PageAccessName =
   | "forbidden-component"
   | "unauthenticated"
   | "login-component"
+  | "page-not-found"
   | "user-management";
 
 export interface PageAccessRight {
