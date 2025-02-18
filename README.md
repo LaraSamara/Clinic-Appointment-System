@@ -70,7 +70,7 @@ The **Clinic Appointment System** is a web-based application designed to manage 
 ## 🏗️ Installation & Setup
 ### 1️⃣ **Clone the Repository**
 ```sh
-git clone https://github.com/your-repo-url.git
+git clone https://github.com/GSG-Next-JS-Training/Clinic-Appointment-System.git
 cd gsg-next-js-training-clinic-appointment-system
 ```
 
