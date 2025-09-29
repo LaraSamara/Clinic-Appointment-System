@@ -1,0 +1,11 @@
+import { jsx as _jsx } from "react/jsx-runtime";
+import { StrictMode } from "react";
+import { createRoot } from "react-dom/client";
+import { BrowserRouter, Route, Routes } from "react-router-dom";
+import SnackbarProvider from "./context/SnackbarContext";
+import { GridProvider } from "./context/GridContext";
+import App from "./App";
+import "./index.css";
+import ErrorBoundary from "./component/error-boundary";
+import { AppointmentsProvider } from "./context/appointmentContext";
+createRoot(document.getElementById("root")).render(_jsx(StrictMode, { children: _jsx(BrowserRouter, { children: _jsx(ErrorBoundary, { children: _jsx(AppointmentsProvider, { children: _jsx(SnackbarProvider, { children: _jsx(GridProvider, { children: _jsx(Routes, { children: _jsx(Route, { path: "/*", element: _jsx(App, {}) }) }) }) }) }) }) }) }));
