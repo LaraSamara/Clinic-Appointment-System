@@ -7,6 +7,7 @@ interface DataSetItem {
   confirmed: number;
   pending: number;
   completed: number;
+  [key: string]: string | number;
 }
 
 interface AppointmentsContextType {
